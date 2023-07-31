@@ -1,13 +1,3 @@
-/*
-Задача 3. В зависимости от поля “grade”, установите еще один столбец с именем
-class в зависимости от значений:
-A++ – DISTINCTION,
-A+ – FIRST CLASS,
-A – ECOND CLASS,
-B+ – SECOND CLASS,
-C+ – THIRD CLASS,
-ALL OTHERS – FAIL
-*/
 
 USE komkovfirstdb;
 CREATE DATABASE Sem2Task2;
