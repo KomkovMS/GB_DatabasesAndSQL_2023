@@ -9,6 +9,7 @@ C+ – THIRD CLASS,
 ALL OTHERS – FAIL
 */
 
+
 USE komkovfirstdb;
 
 CREATE DATABASE Sem2Task2;
