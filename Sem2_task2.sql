@@ -11,21 +11,17 @@ ALL OTHERS – FAIL
 
 
 USE komkovfirstdb;
-
 CREATE DATABASE Sem2Task2;
-
 CREATE TABLE student_grades
 (
 stud_id INT,
 total_marks INT,
 grade VARCHAR(10)
 );
-
 SELECT * FROM student_grades;
 
 # CASE улучшенная вариация IF
 # sg.* - альяс
-
 SELECT sg.*, CASE
     WHEN grade = 'A++' THEN 'DISTINCTION'
     WHEN grade = 'A+' THEN 'FIRST CLASS'
