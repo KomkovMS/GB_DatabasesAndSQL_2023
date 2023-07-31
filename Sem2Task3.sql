@@ -1,5 +1,6 @@
 USE komkovfirstdb;
 
+
 # Расставим студентам классы в зависимости от оценок
 # Total_marks > 450 – «ПЕРВЫЙ КЛАСС С ОТЛИЧИЕМ»
 # Total_marks от 400 до 450 – «ПЕРВЫЙ КЛАСС»
@@ -49,5 +50,6 @@ SET class =
         WHEN Total_marks BETWEEN 300 AND 350 THEN 'ТРЕТИЙ КЛАСС'
         ELSE 'НЕУДАЧА'
     END;
+
 
 SELECT * FROM school_students;
