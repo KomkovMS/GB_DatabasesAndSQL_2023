@@ -19,6 +19,22 @@ class_grade VARCHAR(100)
 
 SELECT * FROM school_students;
 
+# Задание 5 - Оценка посещаемости студента
+# 1. Проверьте истинность выражения, используя оператор "IF"
+# Если 100<200, то печатаем 'yes'; иначе - 'no'
+#
+
+SELECT if(100 < 200, 'yes', 'no')
+FROM school_students;
+
+# Задание 5 - Оценка посещаемости студента
+# 2. В зависимости от общего количество баллов, укажите статус ученик в табеле
+# успеваемости: если суммарное количество баллов больше 450, то студент
+# закончил на “Отлично”; иначе - “Хорошо”
+
+SELECT school_students.*, if(total_marks > 450, 'Отлично', 'Хорошо')
+FROM school_students;
+
 SELECT ss.*, CASE
     WHEN total_marks > 450 THEN 'FIRST CLASS DISTINCTION'
     WHEN total_marks BETWEEN 400 AND 450 THEN 'FIRST CLASS'
